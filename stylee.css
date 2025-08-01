@@ -1,0 +1,484 @@
+/* Reset dan Base Style */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.index-home {
+  background-image: url("aset/ikon.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* Tautan Global  */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header  */
+.header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fbc02d;
+}
+
+/* Navigasi  */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #fbc02d;
+  color: #000;
+}
+
+/*  Hero Section (Halaman Pertama)  */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 70vh;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #f4c10f;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* ---------------- pfofile ---------------- */
+
+body {
+  background: linear-gradient(to right, #0277bd, #004d40);
+}
+
+/* Konten utama */
+main {
+  padding: 2rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #f4c10f;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Galeri */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-item {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item img {
+  max-width: 100%;
+  border-radius: 5px;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Peta */
+.map-container {
+  margin-top: 1rem;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+/*----------news----------*/
+
+h2 {
+  font-family: 'Times New Roman', serif;
+  font-size: 32px;
+  text-align: center;
+  color: #f4c10f;
+  margin-top: 30px;
+
+}
+
+h3 {
+  font-family: 'Times New Roman', serif;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  margin: 10px 20px;
+  line-height: 1.5;
+}
+
+.galeri-foto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.card1 {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card1:hover {
+  transform: translateY(-5px);
+}
+
+.card1 img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title h2 {
+  font-size: 1.1rem;
+  color: #023047;
+  margin-bottom: 8px;
+}
+
+.card-body h3 {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.card-body a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+
+/* Tombol link */
+.tombol2 {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 25px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tombol2 a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tombol2:hover {
+  background-color: #0056b3;
+}
+
+/* ---------------- galeri ---------------- */
+/* Judul Galeri */
+.galeri-page h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 40px;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px #000;
+  background: linear-gradient(to right, #0277bd, #004d40);
+}
+
+/* Deskripsi */
+.galeri-page .description {
+  font-size: 16px;
+  text-align: center;
+  max-width: 800px;
+  margin: 10px auto 30px;
+  color: #f2f2f2;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Grid Galeri */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Kartu Galeri */
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Gambar Galeri */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Judul Kartu */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px 0;
+  color: #000000;
+}
+
+/* Paragraf Galeri */
+.card-dest {
+  font-size: 14px;
+  padding: 10px 15px 20px;
+  text-align: justify;
+}
+
+/* Link di dalam kartu */
+.card-title a {
+  font-size: 14px;
+  display: block;
+  color: #0077cc;
+  margin-top: 5px;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Sosial */
+.footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  margin: 0 10px;
+}
+
+
+/* ---------------- video---------------- */
+/* Judul Halaman Video */
+.video-page h1 {
+  text-align: center;
+  font-size: 34px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #f4c10f;
+}
+
+/* Deskripsi Video */
+.video-page .description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  color: white;
+}
+
+/* Grid Video */
+/* Kartu Video */
+.video-card {
+   background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+/* Video Iframe */
+.video-card iframe {
+  width: 100%;
+  height: 215px;
+  border: none;
+  display: block;
+}
+
+/* Judul Video */
+.video-card h2 {
+  font-size: 18px;
+  color: #003f88;
+  padding: 12px 16px 6px;
+  margin: 0;
+  background-color: white;
+}
+
+/* Deskripsi Video */
+.video-card p {
+  padding: 0 16px 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify;
+}
+
+/* Footer Video */
+.footer {
+  background-color: #005fa3;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a.social-link {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a.social-link:hover {
+  text-decoration: underline;
+}
+
+
+/* ---------------- about ---------------- */
+.about-team {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #0277bd, #004d40);
+}
+
+.about-team h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #f4c10f;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-member {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 1.2em;
+  margin: 10px 0 5px;
+  color: #00796b;
+}
+
+.team-member p {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #00796b;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #004d40;
+}
